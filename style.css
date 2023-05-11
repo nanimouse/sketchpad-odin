@@ -1,8 +1,18 @@
 #container{
-    display: flex;
-    border-color: red;
+    /* display: flex; */
+    /* border: 5px solid red; */
+    margin-left: 362px;
 }
 
-.grid{
-    border-color: red;
+.row{
+    /* border: 5px solid black; */
+    display: flex;
+    row-gap: 5px;
+}
+
+.col{
+    border: 1px solid black;
+    display: flex;
+    column-gap: 5px;
+    padding: 20px;
 }
