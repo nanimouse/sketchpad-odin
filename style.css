@@ -14,5 +14,12 @@
     border: 1px solid black;
     display: flex;
     column-gap: 5px;
-    padding: 20px;
+    /* padding: 20px; */
+    width: 30px;
+    height: 27px;
+    /* background-color: aqua; */
+}
+
+.blackTest{
+    background-color: black;
 }
