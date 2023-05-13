@@ -8,7 +8,33 @@
 
     <body>
 
-        <div id="container">
+        <h1 id="test">Draw Something!</h1>
+
+        <div id="container"></div>
+
+        <div id="buttons">
+            <div>
+                <span>Color Picker</span> <br>
+                <input onclick="divColor()" type="color" id="colorPicker"/> <br>
+            </div>
+
+            <div>
+                <button onclick="eraser('white')">Erase</button>
+                <!-- figure how to make cursor return white -->
+            </div>
+
+            <div>
+                <input type="text" placeholder="Change Grid Size" value="16"> <button>Change Size</button> <br>
+            </div>
+
+
+
+
+            <div>
+                <button onclick="resetGrid()">Reset</button>
+            </div>
+
+            <!-- <button onclick="changeGrid">Change Grid Size</button> -->
 
         </div>
 

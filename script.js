@@ -2,32 +2,36 @@
 
 let body = document.querySelector("body");
 let container = document.querySelector("#container");
-
-// for(i=0; i<16; i++){
-//     let div = document.createElement("div");
-//     div.setAttribute('class', 'grid');
-//     container.appendChild(div);
-// }
-    //creates divs in a single row
+// let num = document.getElementById("gridSize");
 
 for(rowNum=0; rowNum<16; rowNum++){
     let row = document.createElement("div");
     row.setAttribute('class', 'row');
     container.appendChild(row);
     for(colNum=0; colNum<16; colNum++){
-        let col = document.createElement("div");
-        col.setAttribute('class', 'col');
-        row.appendChild(col);
+        let box = document.createElement("div");
+        box.setAttribute('class', 'box');
+        row.appendChild(box);
 
-        col.addEventListener("mouseover", divColor) //changes color of all matches
+        box.addEventListener("mouseover", divColor) //changes color of all matches
     }
 }
     //creates rows and columns
 
 function divColor(){
-    this.style.backgroundColor = "black";
+    let color = document.getElementById("colorPicker").value;
+    this.style.backgroundColor = color;
 }
     //change an individual divs bg color
 
+const resetGrid = () => {
+    let squares = container.querySelectorAll(".box");
+    squares.forEach(square => {
+        square.style.backgroundColor = "#fff";
+    })
+}
 
 
+
+
+// const changeGrid = num => {
