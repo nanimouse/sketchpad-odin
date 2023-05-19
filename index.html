@@ -15,18 +15,24 @@
         <div id="buttons">
             <div>
                 <span>Color Picker</span> <br>
-                <input onclick="divColor()" type="color" id="colorPicker"/> <br>
+                <input id="colorPicker" onclick="divColor()" type="color" /> <br>
             </div>
 
             <div>
-                <button onclick="eraser('white')">Erase</button>
-                <!-- figure how to make cursor return white -->
-            </div>
+                <!-- <button id="eraser" >Erase</button>
+                 figure how to make cursor return white
+                 i'll figure this out later
+            </div> -->
 
             <div>
-                <input type="text" placeholder="Change Grid Size" value="16"> <button>Change Size</button> <br>
+                <input id="change" type="text" placeholder="Change Grid Size 2-100" value="16" >
+
+                <button onclick="changeGrid(this.value)">Change Size</button> <br>
             </div>
 
+            <div onclick="clearBoard()">
+                <button>Clear Board</button>
+            </div>
 
 
 

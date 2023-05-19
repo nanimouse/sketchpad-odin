@@ -2,24 +2,36 @@ h1{
     text-align: center;
 }
 #container{
-    display: table;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr; */
+    border: 1px solid black;
     margin: 0 auto;
+    width: 512px;
+    height: 464px;
+    /* background-color: black; */
+    /* grid-gap: 1px; */
+    /* box-sizing: border-box; */
+
+
 }
 
 .row{
     /* border: 5px solid black; */
-    display: flex;
-    row-gap: 5px;
+    /* display: flex; */
+    /* row-gap: 5px; */
+    height: 29px;
 }
 
 .box{
     border: 1px solid black;
-    display: flex;
-    column-gap: 5px;
+    /* display: flex; */
+    /* column-gap: 5px; */
     /* padding: 20px; */
-    width: 30px;
-    height: 27px;
+    /* width: 30px; */
+    /* height: 27px; */
     /* background-color: aqua; */
+    /* box-sizing: border-box; */
 }
 
 .blackTest{
